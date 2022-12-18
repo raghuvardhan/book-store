@@ -1,0 +1,12 @@
+<div id="book-slideshow">
+    <div class="slide" *ngFor="let book of books; let i = index" [ngClass]="{ 'active': i === activeIndex }">
+      <img [src]="book.imageUrl" [alt]="book.title">
+      <div class="caption">
+        <h2>{{ book.title }}</h2>
+        <p>Author: {{ book.author }}</p>
+        <p>{{ book.quote }}</p>
+      </div>
+    </div>
+    <button (click)="previousSlide()">Previous</button>
+    <button (click)="nextSlide()">Next</button>
+  </div>

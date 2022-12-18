@@ -1,0 +1,88 @@
+/* Reset default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Add some basic styling to the body */
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.5;
+	color: #333;
+}
+
+/* Style the slideshow container */
+#book-slideshow {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+}
+
+/* Style the slides */
+#book-slideshow .slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+
+#book-slideshow .slide.active {
+	opacity: 1;
+}
+
+#book-slideshow .slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#book-slideshow .slide .caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+
+#book-slideshow .slide .caption h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+}
+
+#book-slideshow .slide .caption p {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+/* Style the buttons */
+#book-slideshow button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 1.2em;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+#book-slideshow button:hover {
+	opacity: 0.8;
+}
+
+#book-slideshow button:first-child {
+	left: 20px;
+}
+
+#book-slideshow button:last-child {
+	right: 20px;
+}

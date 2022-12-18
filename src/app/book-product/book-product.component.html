@@ -1,0 +1,16 @@
+<div class="product-page">
+    <div class="product-header">
+      <img [src]="book.imageUrl" alt="Book cover image">
+      <h1>{{ book.title }}</h1>
+    </div>
+    <p>{{ book.description }}</p>
+    <p class="price">{{ book.price | currency }}</p>
+    <div class="actions">
+      <button (click)="addToCart()">Add to Cart</button>
+      <button (click)="buyNow()">Buy Now</button>
+    </div>
+    <h2>Reviews</h2>
+    <div *ngFor="let review of book.reviews">
+      <p>{{ review.author }} said: {{ review.text }}</p>
+    </div>
+  </div>

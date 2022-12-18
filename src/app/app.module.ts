@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { BookSlideshowComponent } from './book-slideshow/book-slideshow.component';
 import { BookProductComponent } from './book-product/book-product.component';
 import { RouterModule } from '@angular/router';
+import { BookProductsComponent } from './book-products/book-products.component';
+import { BookStoreComponent } from './book-store/book-store.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookSlideshowComponent,
-    BookProductComponent
+    BookProductComponent,
+    BookProductsComponent,
+    BookStoreComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

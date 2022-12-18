@@ -5,18 +5,7 @@
     <title>Book Store</title>
   </head>
   <body>
-    <header>
-      <section>
-        <app-book-slideshow></app-book-slideshow>
-      </section>
-    </header>
-    <h2>Books</h2>
-    <ul>
-      <li *ngFor="let book of books">
-        <a [routerLink]="['/book', book.title]">{{book.title}}</a>
-        <p *ngIf="book.description">{{book.description}}</p>
-        <p *ngIf="book.price">{{book.price}}</p>
-      </li>
-    </ul>
+   <router-outlet></router-outlet>
   </body>
 </html>
+

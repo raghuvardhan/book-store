@@ -48,4 +48,19 @@ export class CartService {
   deleteBook(book: Book) {
     this.books = this.books.filter(b => b.id !== book.id);
   }
+
+  //method to getTotal
+  getTotal(): number {
+    return this.books.reduce((total, book) => total + book.price * book.quantity, 0);
+  }
+
+  //method to getQuantity
+  getQuantity(): number {
+    return this.books.reduce((total, book) => total + book.quantity, 0);
+  }
+
+  //method to clearCart
+  clearCart() {
+    this.books = [];
+  }
 }

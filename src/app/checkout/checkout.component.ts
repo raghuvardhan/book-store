@@ -43,5 +43,6 @@ export class CheckoutComponent implements OnInit {
       this.cartService.clearCart();
       this.router.navigate(['/orders']);
     });
+    this.router.navigate(['/thank-you']);
   }
 }

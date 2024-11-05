@@ -10,4 +10,5 @@ export interface Book {
     quote: string;
     reviews: Review[];
     quantity: number;
+    rating: number;
   }

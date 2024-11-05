@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from '../services/books/books.service';
 
 @Component({
 selector: 'app-book-slideshow',
@@ -28,9 +29,12 @@ books = [
 ];
 activeIndex = 0;
 
-constructor() { }
+constructor(private bookService: BooksService) { }
 
 ngOnInit(): void {
+  this.bookService.getBooks().subscribe((books) => {
+    this.books = books;
+  });
 }
 
 previousSlide() {

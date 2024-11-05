@@ -24,7 +24,8 @@ const books = [
         comment: 'I liked it.'
       }
     ],
-    quantity: 0
+    quantity: 0,
+    rating: 4
   },
   {
     id: '2',
@@ -46,7 +47,8 @@ const books = [
         comment: 'I liked it.'
       }
     ],
-    quantity: 0
+    quantity: 0,
+    rating: 4
   },
   {
     id: '3',
@@ -68,8 +70,100 @@ const books = [
         comment: 'I liked it.'
       }
     ],
-    quantity: 0
-
+    quantity: 0,
+    rating: 4
+  },
+  {
+    id: '4',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    description: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life is a 2016 self-help book by Mark Manson. Manson argues that many people are unhappy because they are chasing the wrong things, and that the key to happiness is to stop giving a f*ck about things that don\'t matter.',
+    price: 12.99,
+    imageUrl: 'subtle-art.jpg',
+    quote: 'The best way to predict the future is to create it.',
+    reviews: [
+      {
+        name: 'John Doe',
+        rating: 5,
+        comment: 'Great book!'
+      },
+      {
+        name: 'Jane Doe',
+        rating: 4,
+        comment: 'I liked it.'
+      }
+    ],
+    quantity: 0,
+    rating: 4
+  },
+  {
+    id: '3',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    description: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life is a 2016 self-help book by Mark Manson. Manson argues that many people are unhappy because they are chasing the wrong things, and that the key to happiness is to stop giving a f*ck about things that don\'t matter.',
+    price: 12.99,
+    imageUrl: 'subtle-art.jpg',
+    quote: 'The best way to predict the future is to create it.',
+    reviews: [
+      {
+        name: 'John Doe',
+        rating: 5,
+        comment: 'Great book!'
+      },
+      {
+        name: 'Jane Doe',
+        rating: 4,
+        comment: 'I liked it.'
+      }
+    ],
+    quantity: 0,
+    rating: 4
+  },
+  {
+    id: '3',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    description: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life is a 2016 self-help book by Mark Manson. Manson argues that many people are unhappy because they are chasing the wrong things, and that the key to happiness is to stop giving a f*ck about things that don\'t matter.',
+    price: 12.99,
+    imageUrl: 'subtle-art.jpg',
+    quote: 'The best way to predict the future is to create it.',
+    reviews: [
+      {
+        name: 'John Doe',
+        rating: 5,
+        comment: 'Great book!'
+      },
+      {
+        name: 'Jane Doe',
+        rating: 4,
+        comment: 'I liked it.'
+      }
+    ],
+    quantity: 0,
+    rating: 4
+  },
+  {
+    id: '3',
+    title: 'The Subtle Art of Not Giving a F*ck',
+    author: 'Mark Manson',
+    description: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life is a 2016 self-help book by Mark Manson. Manson argues that many people are unhappy because they are chasing the wrong things, and that the key to happiness is to stop giving a f*ck about things that don\'t matter.',
+    price: 12.99,
+    imageUrl: 'subtle-art.jpg',
+    quote: 'The best way to predict the future is to create it.',
+    reviews: [
+      {
+        name: 'John Doe',
+        rating: 5,
+        comment: 'Great book!'
+      },
+      {
+        name: 'Jane Doe',
+        rating: 4,
+        comment: 'I liked it.'
+      }
+    ],
+    quantity: 0,
+    rating: 4
   }
 ]
 
